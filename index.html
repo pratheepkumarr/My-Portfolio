@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <title>Portfolio</title>
+    <style>
+        .glow {
+        animation: glow-animation 2s;
+    }
+
+    @keyframes glow-animation {
+        0% { box-shadow: 0 0 10px rgba(0, 255, 0, 0.5); }
+        50% { box-shadow: 0 0 20px rgba(0, 255, 0, 0.7); }
+        100% { box-shadow: 0 0 10px rgba(0, 255, 0, 0.5); }
+    }
+       
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <i class="fas fa-code"></i>
+        </div>
+        <div class="links">
+            <a href="#" class="active">About</a>
+            <a href="#" onclick="scrollToProjects()">Portfolio</a>
+            <a href="#" onclick="scrollToContact()">Contact Me</a>
+        </div>
+    </nav>
+
+    <div class="about">
+        <div class="left">
+            <h3>Fresher</h3>
+            <div class="info">
+                <h2>I'm Pratheepkumar</h2>
+                <p>I craft innovative and dynamic applications, turning complex problems into elegant,<br>
+                 user-friendly solutions!</p>
+                <div class="buttons">
+                    <button class="hire" onclick="sendEmail()">
+                        Hire me <i class="fas fa-plus"></i>
+                    </button>
+                    <button class="email" onclick="copyEmail()">
+                        Copy Email <i class="far fa-copy"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <a class="online" href="#"><i class="fas fa-circle"></i> Available For Job</a>
+            <img src="Pratheeppass Photo.jpg">
+        </div>
+    </div>
+
+    <div class="works" id="projects">
+        <div class="left">
+            <h3 ><i class="fas fa-circle"></i> PROJECTS</h3>
+            <div class="works-list">
+                <div class="item">
+                    <div class="work-info">
+                        <h5 class="active"><a href="https://github.com/pratheepkumarr/ID-Card-Detection-">Project 1: Object Detection</a></h5>
+                        <p>• The system uses a YOLO model to detect ID cards and measure their distance from the camera in real-time.</p>
+                        <p>• Visual Indicators: It provides visual feedback by marking detected ID cards with bounding boxes, confidence scores, and distance information.</p>
+                    </div>
+                </div>
+                
+                <div class="item">
+                    <div class="work-info">
+                        <h5 class="active" ><a href="https://github.com/pratheepkumarr/My-Portfolio">Project 2: Portfolio</a></h5>
+                        <p>• A Portfolio website highlights my skills and completed projects to potential employers or clients.</p>
+                        <p>• It serves as a central, professional platform to showcase my work and connect with people.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="right">
+            <div class="item">
+                <a >About Me</a>
+                <p>Enthusiastic Software Engineering graduate with hands-on experience in software development and coding. Adept at creating robust applications and troubleshooting issues efficiently. Passionate about learning new technologies and committed to delivering innovative solutions. Eager to contribute to a dynamic team and grow professionally in a fast-paced environment.</p>
+            </div>
+            <div class="item">
+                <a href="https://drive.google.com/drive/folders/1hGSYK1jgKlRdVd3V6AjyvYRqqpUnN5Rm?usp=drive_link">Certificates</a>
+                <p>•Cloud Computing - NPTEL<br>
+                   •Introduction to IoT - NPTEL<br>
+                   •EF Standard English Test - EF SET(66%)<br>
+                   •Crash course on Python - Coursers</p>
+            </div>
+            <div class="item">
+                <a href="https://drive.google.com/drive/folders/1sybfoKvDkWpju66WK6wDH2GV5r6-xhmW?usp=drive_link">Workshops</a>
+                <p>•“Java Programming” workshop conducted by LIVEWIRE,Salem.<br>
+                    <br>
+                </p>
+            </div>
+            <div class="item">
+                <a>Achievements</a>
+                <p>I got academic excellence award in Sona College of Technology</p>
+            </div>
+            <div class="item">
+                <a >Skills</a>
+                <p>Python, SQL, Java, HTML and CSS, JavaScript, Bootstrap, Github</p>
+            </div>
+        </div>
+    </div>
+
+    <footer id="contact" class="bg-dark text-center text-white">
+        <div class="container p-4 pb-0" id="social-media">
+            <section class="mb-4">
+                <a class="btn btn-outline-light btn-floating social-btn" href="https://www.instagram.com/_i._.am._.unique._/" role="button">
+                    <i class="fab fa-instagram fa-2x"></i>
+                </a>
+                <a class="btn btn-outline-light btn-floating social-btn" href="https://www.linkedin.com/in/pratheepkumar-r-4bab8a28b/" role="button">
+                    <i class="fab fa-linkedin-in fa-2x"></i>
+                </a>
+                <a class="btn btn-outline-light btn-floating social-btn" href="https://github.com/pratheepkumarr" role="button">
+                    <i class="fab fa-github fa-2x"></i>
+                </a>
+            </section>
+        </div>
+        <div class="right">
+            <a class="online" href="https://drive.google.com/file/d/18RHvimzfyZnB4xN9IQzx8Zu1_HSpdJLW/view?usp=sharing"><i class="fas fa-circle"></i> View Resume</a>
+        </div>
+    </footer>
+
+    <script>
+        function sendEmail() {
+            var subject = encodeURIComponent("Job Inquiry");
+            var body = encodeURIComponent("Hello Pratheepkumar,\n\nI am interested in hiring you. Here are the details:\n\nName: \nPhone Number: \n\nBest regards,\n[Your Name]");
+            var mailtoURL = `mailto:pratheepkumarr19@gmail.com?subject=${subject}&body=${body}`;
+            window.location.href = mailtoURL;
+        }
+
+        function copyEmail() {
+            var email = "pratheepkumarr19@gmail.com";
+            navigator.clipboard.writeText(email).then(function(){
+                alert("Email copied to clipboard!");
+            })
+        }
+
+        function scrollToProjects() {
+            var projectsSection = document.getElementById('projects');
+            projectsSection.scrollIntoView({ behavior: 'smooth' });
+            
+            // Add the glowing effect
+            projectsSection.classList.add('glow');
+            
+            // Remove the glowing effect after 2 seconds
+            setTimeout(function() {
+                projectsSection.classList.remove('glow');
+            }, 2000);
+        }
+
+        function scrollToContact() {
+            var contactSection = document.getElementById('social-media');
+            contactSection.scrollIntoView({ behavior: 'smooth' });
+            
+            // Add the glowing effect
+            contactSection.classList.add('glow');
+            
+            // Remove the glowing effect after 2 seconds
+            setTimeout(function() {
+                contactSection.classList.remove('glow');
+            }, 2000);
+        }
+    </script>
+</body>
+
+</html>
